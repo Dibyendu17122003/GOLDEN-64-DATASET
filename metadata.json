@@ -1,0 +1,196 @@
+{
+  "dataset_name": "Golden64 Rice Field Multimodal Dataset",
+  "version": "1.0",
+  "description": "A comprehensive multimodal agricultural dataset for Golden64 rice crop analysis. The dataset integrates field images, IoT sensor measurements, laboratory soil analysis, and crop-specific features to support machine learning, anomaly detection, and precision agriculture applications.",
+
+  "author": {
+    "name": "Your Name",
+    "institution": "Your Institution",
+    "contact": "your.email@example.com"
+  },
+
+  "publication": {
+    "type": "Research Dataset",
+    "year": 2026,
+    "intended_use": "Academic research, machine learning model development, and agricultural analysis"
+  },
+
+  "dataset_overview": {
+    "crop_type": "Golden64 Rice",
+    "total_samples": 350,
+    "modalities": [
+      "Image Data",
+      "Sensor Data",
+      "Laboratory Data",
+      "Crop Features"
+    ],
+    "geographical_location": "West Bengal, India (example)",
+    "data_collection_period": "2026",
+    "data_collection_method": "Images captured using smartphone cameras; environmental data collected using IoT sensors; soil parameters measured in laboratory conditions"
+  },
+
+  "directory_structure": {
+    "images": {
+      "description": "Field images of rice crops captured under natural conditions",
+      "format": "JPEG",
+      "count": 350
+    },
+    "sensor_data.csv": {
+      "description": "IoT sensor measurements collected from the field environment"
+    },
+    "lab_data.csv": {
+      "description": "Laboratory measurements of soil parameters"
+    },
+    "crop_features.csv": {
+      "description": "Crop-specific measurements such as height and spacing"
+    },
+    "metadata.json": {
+      "description": "Dataset metadata and schema description"
+    },
+    "README.md": {
+      "description": "Dataset documentation and usage instructions"
+    }
+  },
+
+  "data_schema": {
+    "sensor_data.csv": {
+      "columns": [
+        "time",
+        "temp",
+        "hum",
+        "light",
+        "soil",
+        "soil_status",
+        "rain_status",
+        "rain_value",
+        "seconds_elapsed",
+        "altitude",
+        "longitude",
+        "latitude"
+      ],
+      "description": {
+        "temp": "Ambient temperature",
+        "hum": "Relative humidity",
+        "light": "Light intensity",
+        "soil": "Soil moisture value",
+        "soil_status": "Soil condition classification",
+        "rain_status": "Rain presence indicator",
+        "rain_value": "Rain intensity value",
+        "altitude": "Elevation of field",
+        "longitude": "GPS longitude",
+        "latitude": "GPS latitude"
+      }
+    },
+
+    "lab_data.csv": {
+      "columns": [
+        "pH",
+        "pH_type"
+      ],
+      "description": {
+        "pH": "Soil pH value",
+        "pH_type": "Categorized pH level (acidic, neutral, alkaline)"
+      }
+    },
+
+    "crop_features.csv": {
+      "columns": [
+        "crop_height_ft",
+        "crop_distance_ft"
+      ],
+      "description": {
+        "crop_height_ft": "Height of rice plant in feet",
+        "crop_distance_ft": "Distance between plants"
+      }
+    }
+  },
+
+  "image_information": {
+    "capture_device": "Smartphone cameras (e.g., Motorola Edge 50 Fusion, Realme Narzo 70 Turbo 5G)",
+    "image_type": "Field-level crop images",
+    "original_resolution": "Varies",
+    "processed_resolution": "128x128 (used for model training)",
+    "preprocessing_steps": [
+      "Watermark removal via cropping",
+      "Optional resizing for training",
+      "Normalization of pixel values (0–1 range)"
+    ],
+    "conditions": [
+      "Natural lighting",
+      "Different growth stages",
+      "Outdoor field conditions"
+    ]
+  },
+
+  "data_preprocessing": {
+    "image_processing": [
+      "Watermark removal",
+      "Resizing to fixed dimensions (128x128)",
+      "Pixel normalization"
+    ],
+    "sensor_data_processing": [
+      "Data cleaning",
+      "Handling missing values (if any)",
+      "Normalization"
+    ],
+    "lab_data_processing": [
+      "Validation of pH values",
+      "Categorization into pH types"
+    ]
+  },
+
+  "statistical_summary": {
+    "image_count": 350,
+    "sensor_records": 350,
+    "lab_records": 350,
+    "feature_records": 350,
+    "note": "Each sample corresponds to one field observation"
+  },
+
+  "applications": [
+    "Crop health monitoring",
+    "Anomaly detection in agricultural fields",
+    "Multimodal machine learning",
+    "Precision agriculture",
+    "Soil and crop analysis",
+    "Smart farming systems"
+  ],
+
+  "machine_learning_usage": {
+    "tasks_supported": [
+      "Image-based classification",
+      "Anomaly detection",
+      "Regression using sensor data",
+      "Multimodal learning"
+    ],
+    "input_types": [
+      "Images",
+      "Numerical sensor data",
+      "Laboratory measurements"
+    ],
+    "target_usage": "Field condition prediction (Good / Slightly Abnormal / Bad)"
+  },
+
+  "data_quality": {
+    "missing_values": "Minimal or none",
+    "noise_level": "Low",
+    "consistency": "High",
+    "limitations": [
+      "Single crop type (Golden64)",
+      "Limited environmental variation",
+      "Watermarks present in raw images (removed during preprocessing)"
+    ]
+  },
+
+  "license": {
+    "type": "Academic Use Only",
+    "description": "This dataset is intended for research and educational purposes. Commercial use requires permission."
+  },
+
+  "citation": {
+    "text": "If you use this dataset, please cite it as: Golden64 Rice Field Multimodal Dataset (2026)"
+  },
+
+  "created_on": "2026-05-04",
+  "last_updated": "2026-05-04"
+}
